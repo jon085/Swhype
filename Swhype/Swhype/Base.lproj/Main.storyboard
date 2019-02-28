@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="Swhype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9l-lh-hD9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylL-2e-Scu">
+                                        <rect key="frame" x="8" y="0.0" width="45" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Wnx-Ng-IDJ"/>
+                                            <constraint firstAttribute="width" constant="45" id="kdz-Sx-dDs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                        <state key="normal" title="S">
+                                            <color key="titleColor" red="0.48741094559999998" green="0.071948261779999995" blue="0.039097502159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tabButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Suu-Y8-S09"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2B-YB-wBf">
+                                        <rect key="frame" x="165" y="0.0" width="45" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="Ncn-kW-Tz8"/>
+                                            <constraint firstAttribute="height" constant="45" id="bKw-Df-cYq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.48741094559585496" green="0.07194826178320432" blue="0.039097502156844717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tabButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erT-bA-AkH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-0w-7F5">
+                                        <rect key="frame" x="322" y="0.0" width="45" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="34g-zg-R9c"/>
+                                            <constraint firstAttribute="width" constant="45" id="3By-ck-E83"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                        <state key="normal" title="O">
+                                            <color key="titleColor" red="0.48741094559999998" green="0.071948261779999995" blue="0.039097502159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tabButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dN-Vn-yGh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21408407809999999" green="1" blue="0.16956185109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CKR-0w-7F5" firstAttribute="centerY" secondItem="W9l-lh-hD9" secondAttribute="centerY" id="OeT-jr-oRO"/>
+                                    <constraint firstAttribute="trailing" secondItem="CKR-0w-7F5" secondAttribute="trailing" constant="8" id="YdP-eo-VYB"/>
+                                    <constraint firstItem="H2B-YB-wBf" firstAttribute="centerY" secondItem="W9l-lh-hD9" secondAttribute="centerY" id="c2Y-s2-fID"/>
+                                    <constraint firstItem="ylL-2e-Scu" firstAttribute="centerY" secondItem="W9l-lh-hD9" secondAttribute="centerY" id="h20-GZ-Rpk"/>
+                                    <constraint firstAttribute="height" constant="45" id="hur-Om-Nf7"/>
+                                    <constraint firstItem="H2B-YB-wBf" firstAttribute="centerX" secondItem="W9l-lh-hD9" secondAttribute="centerX" id="sWh-Ox-qZo"/>
+                                    <constraint firstItem="ylL-2e-Scu" firstAttribute="leading" secondItem="W9l-lh-hD9" secondAttribute="leading" constant="8" id="wdB-ow-KIa"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-gy-3h0">
+                                <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                                <connections>
+                                    <segue destination="uzL-DC-rSE" kind="embed" id="nvA-Zr-zbm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vpc-gy-3h0" secondAttribute="bottom" id="1uc-o4-aQ8"/>
+                            <constraint firstItem="W9l-lh-hD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Euh-fW-0AU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vpc-gy-3h0" secondAttribute="trailing" id="bOc-EO-B1g"/>
+                            <constraint firstItem="vpc-gy-3h0" firstAttribute="top" secondItem="W9l-lh-hD9" secondAttribute="bottom" constant="8" id="bdh-dY-3h7"/>
+                            <constraint firstItem="vpc-gy-3h0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hig-Tk-QSi"/>
+                            <constraint firstItem="W9l-lh-hD9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iau-zd-pbK"/>
+                            <constraint firstItem="W9l-lh-hD9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xLg-y4-dDO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Main Screen Page View Controller-->
+        <scene sceneID="HXb-34-7fm">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uzL-DC-rSE" customClass="MainScreenPageViewController" customModule="Swhype" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Td8-wk-LiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="157"/>
+        </scene>
+    </scenes>
+</document>
